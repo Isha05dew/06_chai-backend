@@ -5,7 +5,7 @@ import { app } from "./app.js";
 
 
 dotenv.config({
-    path: './env' 
+    path: './.env' 
 })
 
 
@@ -16,7 +16,7 @@ connectDB()
         throw error
     })
     app.listen(process.env.PORT, () => {
-        console.log(` Seerver is listening on port : ${process.env.PORT}`);
+        console.log(` Server is listening on port : ${process.env.PORT}`);
     })
 })
 .catch((err) => {
