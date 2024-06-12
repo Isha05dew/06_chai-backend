@@ -82,7 +82,7 @@ userSchema.methods.generateAccessToken = function() {
 userSchema.methods.generateRefressToken = function() {
     return jwt.sign(
         {
-            id: this._id,
+            _id: this._id,
             
         },
         process.env.REFRESS_TOKEN_SECRET,
