@@ -18,3 +18,5 @@ const subscriptionSchema = new mongoose.Schema(
 )
 
 export const Subscription = mongoose.model("Subscription", subscriptionSchema)
+
+// Watch the 'Subscription Model image' for better understanding
