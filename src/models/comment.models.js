@@ -14,7 +14,11 @@ const commentSchema = new Schema(
         owner: {
             type: Schema.Types.ObjectId,
             ref: "User"
-        }
+        },
+        isLiked: {
+            type: Boolean,
+            default: false
+        },
     },
     {
         timestamps: true

@@ -10,6 +10,10 @@ const tweetSchema = new Schema(
             type: String,
             required: true
         },
+        isLiked: {
+            type: Boolean,
+            required: true
+        }
     },
     {
         timestamps: true
