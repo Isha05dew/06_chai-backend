@@ -45,6 +45,10 @@ const userSchema = new mongoose.Schema(
         refreshToken: {
             type: String,
         },
+        Issubscribed: {
+            type: Boolean,
+            default: false
+        }
     },
     {
         timestamps: true
